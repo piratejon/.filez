@@ -48,6 +48,15 @@ alias bs='bc <<< "scale=4;`cat /sys/class/power_supply/BAT0/energy_now` / `cat /
 
 # random linux stuff
 alias dt='dmesg | tail'
+alias dl='dmesg | less'
 
+# lol
+alias wget='curl -O'
 #source /usr/share/chruby/chruby.sh
 #RUBIES+=(/usr)
+
+# OOOPS
+alias rmi='rm -i'
+
+# JAVASCRIPT!
+alias jl='jslint --color'

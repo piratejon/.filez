@@ -15,3 +15,5 @@ set textwidth=79
 set gfn=Simsun\ 18
 
 autocmd FileType javascript setlocal ts=4 sts=2 sw=4
+
+echo "Abandon all hope, ye who enter here."
