@@ -1,3 +1,9 @@
+usage
+=====
+status.sh compares the currently installed files with the repo files, using meld
+update_repo.sh brings the latest live versions of any tracked files into the repo
+install.sh copies the repo files into the home directory where they live
+
 codename
 ========
 cloaked-archer
