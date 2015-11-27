@@ -4,7 +4,7 @@ export PATH=$PATH:/home/js/.cabal/bin:/opt/android-sdk/tools:/opt/android-sdk/pl
 
 set -o vi
 
-export CFLAGS="-g3 -Wall -std=c99 -pedantic"
+export CFLAGS="-g3 -Wall -std=c11 -pedantic"
 
 export LESS=-FiXSR
 
@@ -30,6 +30,7 @@ alias vg='valgrind --tool=memcheck --num-callers=40 --leak-check=full --leak-res
 
 # compiling aliases
 alias mc='make clean'
+alias mcc='make superclean'
 alias mt='make test'
 alias m='make'
 
@@ -50,6 +51,9 @@ alias bs='bc <<< "scale=4;`cat /sys/class/power_supply/BAT0/energy_now` / `cat /
 alias dt='dmesg | tail'
 alias dl='dmesg | less'
 
+# python
+alias pt='python test_*.py'
+
 # lol
 alias wget='curl -O'
 #source /usr/share/chruby/chruby.sh
@@ -60,3 +64,7 @@ alias rmi='rm -i'
 
 # JAVASCRIPT!
 alias jl='jslint --color'
+
+# Rust!
+alias ct='cargo test'
+

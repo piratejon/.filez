@@ -3,3 +3,15 @@
 	name = Jonathan Wesley Stone
 [push]
 	default = simple
+[color]
+	ui = auto
+[merge]
+	tool = meld
+	conflictstyle = diff3
+[mergetool "meld"]
+  cmd = meld --diff "$BASE" "$LOCAL" --diff "$BASE" "$REMOTE" --auto-merge "$LOCAL" "$BASE" "$REMOTE" --output "$MERGED"
+	trustExitCode = false
+[diff]
+	tool = meld
+[difftool "meld"]
+	cmd = meld "$LOCAL" "$REMOTE"

@@ -16,4 +16,7 @@ set gfn=Simsun\ 18
 
 autocmd FileType javascript setlocal ts=4 sts=2 sw=4
 
+call pathogen#infect()
+call pathogen#helptags()
+
 echo "Abandon all hope, ye who enter here."
